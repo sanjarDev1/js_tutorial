@@ -50,9 +50,43 @@ console.log(parseInt(101010, 2));
 
 console.log(Number(42).toString(2));
 
+// Math kutubhonasi ESX da chiqgan yangi kutubhona
+// abs absolyut qiymat qaytaradi doim + son chiqadi
+console.log(Math.abs(-20))
+
+// pow darajaga ko`taradi; 
+console.log(Math.pow(3,3));
+
+// kasr sonni butun songachca yahlitlaydi kasrning birinchi honasi 5dan katta va 5 ga teng bolsa butun songa 1 qoshadi
+console.log(Math.round(12.5));
+
+// ceil - patalok degani
+// kasr son chiqsa har qanday qiymatda ham butun songa 1 qoshib yahlitlaydi 
+console.log(Math.ceil(12.1));
 
 
+// kasr son nechchi bolshidan qat iy nazar butun sonni ozini chiqaradi 
+console.log(Math.floor(15.9));
 
+// sqrt ildiz chiqaradi
 
+console.log(Math.sqrt(25));
 
+// cbrt kub ildiz oladi
+
+console.log(Math.cbrt(1000));
+
+// min eng kichkina sonni oladi
+
+console.log(Math.min(12,13,4,8,0,6,-1));
+
+// max eng katta sonni oladi
+
+console.log(Math.max(35,14,22,41,39));
+
+// random 0 dan 1 gacha sonlar orasidan itiyoriy son chiqarib beradi
+console.log(Math.random());
+
+// parseIntni ichiga random funkisyani yozib 10 ga kopaytirilsa 0-9 gacha butun sonlarni chiqaradi
+console.log(parseInt(Math.random() * 100));
 
