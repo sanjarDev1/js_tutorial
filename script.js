@@ -65,14 +65,33 @@ const we = (text) => {
     text.includes("we") == false && console.log(counterWe);
 }
 
-// const b = (textB) => {
-//     var inde =  textB.indexOf("b");
-//     counterB++;
-//     textB = textB.slice(inde);
-//     textB.includes('b') && b(textB);
-//     textB.includes("b") == false && console.log(counterB);
-// }
+const b = (text) => {
+    var inde = text.indexOf('b');
+    counterB++;
+    text = text.slice(inde + 1);
+    text.includes('b') && b(text);
+    text.includes("b") == false && console.log(counterB);
+}
+
+
+const wordA = (text) => {
+    var inde = text.indexOf('a');
+    counterA++;
+    text = text.slice(inde + 1);
+    text.includes('a') && wordA(text);
+    text.includes('a') == false && console.log(counterA);
+}
 
 we(title);
-// b(title);
+b(title);
+wordA(title);
+
+
+
+
+
+
+
+
+
 
