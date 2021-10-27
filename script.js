@@ -51,16 +51,28 @@ console.log(5,2);
 
 // 2-Task
 
-var title = "hello webbrain"
+var title = "welcome webbrain"
 title = title.repeat(5);
-count = 0;
-const text = (a) => {
-    var index = a.indexOf("we")
-    count++;
-    a = text.slice(index + 2);
-    
-    a.includes(/we/gi) && text(a)
+counterWe = 0;
+counterA = 0;
+counterB = 0;
+
+const we = (text) => {
+    var inde = parseInt(text.indexOf('we'));
+    counterWe++;
+    text = text.slice(inde + 2);
+    text.includes('we') && we(text);
+    text.includes("we") == false && console.log(counterWe);
 }
 
-text(title.repeat(5));
+// const b = (textB) => {
+//     var inde =  textB.indexOf("b");
+//     counterB++;
+//     textB = textB.slice(inde);
+//     textB.includes('b') && b(textB);
+//     textB.includes("b") == false && console.log(counterB);
+// }
+
+we(title);
+// b(title);
 
