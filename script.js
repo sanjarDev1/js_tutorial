@@ -54,7 +54,6 @@ console.log(5,2);
 var title = "welcome webbrain"
 title = title.repeat(5);
 counterWe = 0;
-
 counterA = 0;
 counterB = 0;
 
