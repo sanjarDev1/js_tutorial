@@ -46,8 +46,8 @@ for (var i = 2; i <= 100; i++)
 {
     for (var j = 1; j <= i; j++)
     {
-        if(i%j==0)
-        count++      
+        if (i % j == 0)
+            count++;
     }
 
     if (count == 2) {
@@ -60,5 +60,64 @@ for (var i = 2; i <= 100; i++)
 
 
 //  task 3
+
+
+for (var i = 10; i >= 0; i--)
+{
+    console.log(i);
+    }
+
+
+    // task -4
+
+
+var counter = 0;
+let number = BigInt(748394736384937483);
+number = number.toString();
+number = number.split("");
+console.log(number);
+
+for (var i = 0; i <= number.length; i++)
+{
+    if (i % 2 == 0) {
+      var sum =  eval(counter+=i)
+    }
+}
+console.log(sum);
+    console.log(counter);
+
+
+// task -5;
+
+var number=100;
+var count =0;
+for(var i = 2; i<=number; i++)
+{
+count = 0;
+     for(var j = 2;j<=i/2; j++)
+     {
+       if( i % j === 0)
+       {
+         count++;
+         break;
+       }
+     }
+  
+if(count == 0){
+  console.log(i);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
