@@ -4,8 +4,10 @@
 var text = 'webBrain Academy';
 text = text.repeat(5);
 text = text.toLowerCase();
+var text2 = text;
 text = text.split(' ').join('');
-
+console.log(text);
+// console.log(text2);
 var counterA = 0;
 var counterB = 0;
 for (var i = 0; i < text.length; i++){
@@ -72,15 +74,18 @@ for (var i = 10; i >= 0; i--)
 
 
 var counter = 0;
-let number = BigInt(748394736384937483);
-number = number.toString();
-number = number.split("");
-console.log(number);
-
-for (var i = 0; i <= number.length; i++)
+var sum = 0;
+let number = 748394736384937483n;
+number = "" + number;
+for (var i = 0; i <= number.length-1; i++)
 {
-    if (i % 2 == 0) {
-      var sum =  eval(counter+=i)
+    if (i % 2 == 0)
+    {
+        counter = counter + +number[i]
+    }
+    else
+    {
+        sum += +number[i]
     }
 }
 console.log(sum);
