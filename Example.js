@@ -58,8 +58,20 @@ console.log(removeNull("00402"));
 console.log(removeNull("03.1400"));
 console.log(removeNull("30"));
 
+// 1-task
+const func = n => {
+    n = Number(n)
+    return n;
+}
 
-//  Task - 2
+
+console.log(func("230.000"))
+console.log(func("00402"))
+console.log(func("03.1400"))
+console.log(func("30"))
+
+
+//  Task - 3
 
 const func = (num) => {    
     var temp = num;
@@ -72,7 +84,7 @@ console.log(func(152));
 console.log(func(123456789));
 
 
-//  Task-3 
+//  Task-2
 
 const func = str => {
     var sum = [0, 0, 0, 0]
@@ -98,6 +110,18 @@ console.log(func(["&&", "&", "&&&", "&&&&"]));
 console.log(func(["SS", "SS", "SS", "Ss"]));
 
 
+// 2-task
+const func = arr => {
+    return arr.reduce((acc, cur) => arr[0] == cur)
+}
+console.log(func(["@", "@", "@", "@"]))
+console.log(func(["abc", "abc", "abc", "abc"]))
+console.log(func(["SS", "SS", "SS", "SS"]))
+console.log(func(["&&", "&", "&&&", "&&&&"]))
+console.log(func(["SS", "SS", "SS", "Ss"]))
+
+
+// Task-4
 
 const func = myString =>{
 var newString = "";
