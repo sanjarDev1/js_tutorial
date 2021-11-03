@@ -115,6 +115,15 @@ if(count == 0){
 
 // tub sonni topish
 
+for (let i = 2; i <= 200; i++)
+{
+    var count = 0;
+    for (let j = 2; j <= parseInt(Math.sqrt(i)); j++){
+        i % j === 0 && count++;
+    }
+    count ===0 && console.log(i,"tub son");
+}
+
 
 
 
