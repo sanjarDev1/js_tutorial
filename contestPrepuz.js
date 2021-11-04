@@ -16,3 +16,21 @@ for (let i = 0; i < text.length; i++) {
     }
 // }
 console.log(text);
+
+
+function insertWhitespace(str) {
+    let list = []
+    let splitted = str.split("")
+    splitted.forEach(item => {
+        if (item !== item.toLowerCase()) {
+            list.push(" " + item)
+        }
+        else {
+            list.push(item)
+        }
+    })
+    return list.join('').trim();
+}
+console.log(insertWhitespace("MarvinTalksTooMuch"))
+console.log(insertWhitespace("SheWalksToTheBeach"))
+console.log(insertWhitespace("TheGreatestUpsetInHistory"))
