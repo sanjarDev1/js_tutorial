@@ -34,3 +34,17 @@ function insertWhitespace(str) {
 console.log(insertWhitespace("MarvinTalksTooMuch"))
 console.log(insertWhitespace("SheWalksToTheBeach"))
 console.log(insertWhitespace("TheGreatestUpsetInHistory"))
+
+
+
+
+const func = (arr) => {
+  for (let i=arr.length-1; i>=0; i--){
+      if (arr[i] == arr[i-1]){
+          return true;
+      }
+      if (arr[i] != arr[i-1]){
+        return false;
+    }
+  }
+};
