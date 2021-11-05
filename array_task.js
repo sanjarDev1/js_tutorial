@@ -68,9 +68,8 @@ console.log(countAdd);
 
 
 var fruits = ['apple','Ananas', 'Orange', 'Banana', 'kiwi'];
-var sum;
-for (let i = fruits.length-1; i > 0; i--){
-    sum = fruits[i] 
-    // console.log(fruits[i]);
+var sum=[];
+for (let i = fruits.length-1 ; i >= 0; i--) {
+    sum.push(fruits[i]);
 }
 console.log(sum);
