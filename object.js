@@ -22,3 +22,12 @@ users = [
         key: "test",
     },
 ];
+
+const sortedById = users.sort((x, y)=>{
+    return x.id - y.id
+
+})
+
+const sortedByYear = users.sort((x, y)=>{
+    return x.year - y.year
+})
