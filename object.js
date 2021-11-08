@@ -2,7 +2,7 @@ users = [
     {
         id: 3,
         year: 2010,
-        name: "Toshma",
+        name: "Ahmad",
         status: "student",
         key: "test",
     },
@@ -16,21 +16,39 @@ users = [
     },
     {
         id: 2,
-        year: 2001,
-        name: "Ahmad",
+        year: 2012,
+        name: "Toshmat",
         status: "student",
         key: "test",
     },
 ];
 
-const sortedById = users.sort((x, y)=>{
-    return x.id - y.id
+// sortedByName
 
-})
+// const sortedByName2 = users.sort((x, y)=>{
+//     return x.name.localeCompare(y.name);
+// })
+// console.log(sortedByName2);
 
-const sortedByYear = users.sort((x, y)=>{
-    return x.year - y.year
-})
+
+
+//  sortedById
+
+// const sortedById = users.sort((x, y)=>{
+//     return x.id - y.id
+// })
+
+// console.log(sortedById);
+
+
+
+// sortedByYear
+
+// const sortedByYear = users.sort((x, y)=>{
+//     return x.year - y.year
+// })
+
+// console.log(sortedByYear);
 
 // const sortedByName = users.sort((x, y)=>{
 //     if (x.name < y.name) return -1;
@@ -38,30 +56,15 @@ const sortedByYear = users.sort((x, y)=>{
 //     return 0;
 // })
 
-// const sortedByName2 = users.sort((x, y)=>{
-//     return x.name.localeCompare(y.name);
-// })
 
-const onDelete1 = (arr, id) => {
-    let list = []
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].id !== id) {
-            list.push(arr[i])
-        }
-    }
-    return list;
-}
+// const onDelete1 = (id) => {
+//     let list = []
+//     for (let i = 0; i < users.length; i++) {
+//         if (users[i].id === id) {
+//             list.push(users[i])
+//         }
+//     }
+//     return list;
+// }
+// console.log(onDelete1(2));
 
-const onDelete2 = (arr, id) => {
-    let list = []
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].id == id) {
-            list.push(arr[i])
-        }
-    }
-    return list;
-}
-
-
-
-console.log(onDelete1(users, 3))
