@@ -23,48 +23,48 @@ users = [
     },
 ];
 
-// sortedByName
+sortedByName
 
-// const sortedByName2 = users.sort((x, y)=>{
-//     return x.name.localeCompare(y.name);
-// })
-// console.log(sortedByName2);
-
-
-
-//  sortedById
-
-// const sortedById = users.sort((x, y)=>{
-//     return x.id - y.id
-// })
-
-// console.log(sortedById);
+const sortedByName2 = users.sort((x, y)=>{
+    return x.name.localeCompare(y.name);
+})
+console.log(sortedByName2);
 
 
 
-// sortedByYear
+ sortedById
 
-// const sortedByYear = users.sort((x, y)=>{
-//     return x.year - y.year
-// })
+const sortedById = users.sort((x, y)=>{
+    return x.id - y.id
+})
 
-// console.log(sortedByYear);
-
-// const sortedByName = users.sort((x, y)=>{
-//     if (x.name < y.name) return -1;
-//     if (x.name > y.name) return +1;
-//     return 0;
-// })
+console.log(sortedById);
 
 
-// const onDelete1 = (id) => {
-//     let list = []
-//     for (let i = 0; i < users.length; i++) {
-//         if (users[i].id === id) {
-//             list.push(users[i])
-//         }
-//     }
-//     return list;
-// }
-// console.log(onDelete1(2));
+
+sortedByYear
+
+const sortedByYear = users.sort((x, y)=>{
+    return x.year - y.year
+})
+
+console.log(sortedByYear);
+
+const sortedByName = users.sort((x, y)=>{
+    if (x.name < y.name) return -1;
+    if (x.name > y.name) return +1;
+    return 0;
+})
+
+
+const onDelete1 = (id) => {
+    let list = []
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].id === id) {
+            list.push(users[i])
+        }
+    }
+    return list;
+}
+console.log(onDelete1(2));
 
