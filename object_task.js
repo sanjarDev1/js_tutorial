@@ -36,3 +36,18 @@ console.log(checkSame(data2, data3));
 // console.log(nestedValueExists(data));
 // console.log(nestedValueExists(data2));
 // console.log(nestedValueExists(data3));
+
+/* 1. Object kalitlari va qiymatlarini tengligini tekshirish */
+
+// const data = { a: 1, b: 1 };
+// const data2 = { a: 1, b: 1 };
+// const data3 = { a: 1, b: 2 };
+
+// const areEqual = (value1, value2) => {
+//   if (Object.values(value1).toString() === Object.values(value2).toString()) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// };
+// areEqual(data, data2);
